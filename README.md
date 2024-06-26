@@ -30,6 +30,10 @@ From the Confusion Matrix:
 
 *  True Positives: 676 - The model correctly predicted 676 high-risk loans
 
+Overall Accuracy: The ratio of correctly predicted observations to the total observations.
+
+*  Accuracy: 0.99
+
 From the Classification Report:
 
 Precision: The ratio of correctly predicted positive observations to the total predicted positives.
@@ -52,20 +56,18 @@ Support: The number of actual occurrences of the class in the specified dataset.
 *  Support for class 0 (healthy loans): 22,515
 *  Support for class 1 (high-risk loans): 746
 
-Overall Accuracy: The ratio of correctly predicted observations to the total observations.
-
-*  Accuracy: 0.99
-
 Summary and Overall Performance:
 
 The model has a high overall accuracy of 99%, suggesting it is very effective at predicting loan status.
 
 For Healthy Loans (Class 0) the model performs exceptionally well with a precision and recall close to 100%, meaning it almost perfectly identifies healthy loans.
 
-For High-Risk Loans (Class 1) the precision for high-risk loans show 85% of the loans predicted as high-risk are actually high-risk, and recall shows 91% of actual high-risk loans are correctly identified.  The F1 score for high-risk loans is 88%, showing a decent balance between precision and recall.  I would recommend using this model - definitely for Healthy loans - but further refinement may be needed for those High Risk loans.  
-
-It does need to noted that the vast bulk of the data is for healthy loans - over 96% of the data provided is for healthy loans.  Therefore any firm decisions regarding higher risk loans need to balanced with this in mind.  Yes it did correctly predict in the majority of cases correctly for high risk loans, if there is a move to increase on a large scale the amount of high risk loans then because this model (relative to healthy loans) does not work as well for high risk loans, I would suggest examining this aspect further to ensure correct identification. 
-
-This is especially true considering the current economic climate as well as a moral context.  If we are correctly identifying high risk loans correctly we reduce risk to lenders.  On a much bigger scale, the sub prime mortgage crisis was caused by high risk mortgages defaulting at a much higher rate than expected.  The effects of this was that some banks needed to be bailed out by national governments which clearly had wide ranging implications.  By identifying high risk loans correctly, support can be put in place to prevent this happening (i.e. defaults on a large scale).  This can be of benefit to the borrower - and to the lender.  
+For High-Risk Loans (Class 1) the precision for high-risk loans show 85% of the loans predicted as high-risk are actually high-risk, and recall shows 91% of actual high-risk loans are correctly identified.  The F1 score for high-risk loans is 88%, showing a decent balance between precision and recall.
 
 The macro average and weighted average metrics show that the model performs well across both classes, but there's a slight drop in performance for the high-risk class compared to the healthy class. 
+
+I would recommend using this model - especially for use with Healthy loans as it almost always correctly identifies healthy loans.  
+
+However, further refinement may be needed for those High Risk loans.  It does need to noted that the vast bulk of the data is for healthy loans - over 96% of the data provided is for healthy loans - which strengthens my belief that this model is appropriate for identifying healthy loans.  The dataset for those High-Risk loans is comparably substantially smaller which means that outliers could distort the findings.  This, coupled with the model's drop in performance on High-Risk loans suggest that using this model and making any firm decisions regarding higher risk loans need to balanced with this in mind.  Yes it did correctly predict in the majority of cases correctly for high risk loans, if there is a move to increase on a large scale the amount of high risk loans then because this model (relative to healthy loans) does not work as well for high risk loans, I would suggest examining this aspect further to ensure correct identification for this type of loan, and making any modifications necessary.
+
+This is especially true considering the current economic climate as well as a moral context.  If we are correctly identifying high risk loans correctly we reduce risk to lenders and borrowers.  On a much bigger scale, the sub prime mortgage crisis was caused by high risk mortgages defaulting at a much higher rate than expected.  The effects of this was that some banks needed to be bailed out by national governments which clearly had wide ranging implications.  By identifying high risk loans correctly, support can be put in place to prevent this happening (i.e. defaults on a large scale).  This can be of benefit to the borrower - and to the lender.  
