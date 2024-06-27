@@ -1,4 +1,6 @@
-# credit-risk-classification
+Please find below the credit risk analysis report to go alongside the Jupyter notebook file which contains the coding for the credit risk analysis.
+
+# credit-risk-analysis-report
 
 ## Overview of the Analysis
 
