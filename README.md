@@ -1,4 +1,4 @@
-Please find below the credit risk analysis report to go alongside the Jupyter notebook file which contains the coding for the credit risk analysis.
+Please find below the credit risk analysis report to go alongside the Jupyter notebook file which contains the coding for the credit risk classification.
 
 # credit-risk-analysis-report
 
@@ -24,13 +24,13 @@ To achieve this, the data was examined where the labels set (y) from the “loan
 
 From the Confusion Matrix:
 
-*  True Negatives: 22,399 - The model correctly predicted 22,399 healthy loans.
+*  True Negatives: 22,399 - The model correctly predicted 22,399 healthy loans (0).
 
-*  False Positives: 116 - The model incorrectly predicted 116 high-risk loans as healthy loans.
+*  False Positives: 116 - The model incorrectly predicted 116 high-risk loans (1) as healthy loans (0).
 
-*  False Negatives: 70 - The model incorrectly predicted 70 healthy loans as high-risk loans.
+*  False Negatives: 70 - The model incorrectly predicted 70 healthy loans (0) as high-risk loans (1).
 
-*  True Positives: 676 - The model correctly predicted 676 high-risk loans
+*  True Positives: 676 - The model correctly predicted 676 high-risk loans (1).
 
 Overall Accuracy: The ratio of correctly predicted observations to the total observations.
 
